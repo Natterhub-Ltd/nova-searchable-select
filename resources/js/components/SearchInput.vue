@@ -3,7 +3,7 @@
 		:data-testid="dataTestid"
 		:dusk="dataTestid"
 		:class="{ 'opacity-75': disabled }"
-		v-on-clickaway="close"
+		v-click-away="close"
 	>
 		<div class="relative">
 			<div
@@ -105,10 +105,10 @@
 import _ from 'lodash'
 import Vue from 'vue'
 import Popper from 'popper.js'
-import { mixin as clickaway } from 'vue-clickaway'
+import ClickAway from 'vue3-click-away'
 
 export default {
-	mixins: [clickaway],
+	mixins: [ClickAway],
 	inheritAttrs: false,
 	props: {
 		dataTestid: {},

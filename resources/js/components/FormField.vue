@@ -73,7 +73,8 @@
 
 <script>
 import _ from 'lodash'
-import { PerformsSearches, HandlesValidationErrors } from 'laravel-nova'
+import { HandlesValidationErrors } from 'laravel-nova'
+import { PerformsSearches } from '../../../vendor/laravel/nova/resources/js/mixins';
 
 export default {
   mixins: [PerformsSearches, HandlesValidationErrors],
